@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import FlipCard from "./FlipCard";
 import GameStats from "./GameStats";
 
@@ -119,7 +119,7 @@ const GameBoard = () => {
   return (
     <div className="min-h-screen bg-body-bg flex flex-col items-center justify-center">
       <div className="text-center mb-4">
-        <h1 className="text-3xl font-bold">How Good's Your Memory?</h1>
+        <h1 className="text-3xl font-bold">How Good is Your Memory?</h1>
         <h4 className="text-xl">
           Find all pairs in least time & with minimum clicks
         </h4>
@@ -133,13 +133,13 @@ const GameBoard = () => {
           hover:shadow-none hover:translate-y-1
           shadow-start-btn"
         >
-          Let's Find Out
+          Let us Find Out
         </button>
       )}
 
       {(gameStarted || isGameOver) && (
         <div
-          className="bg-game-bg w-[65%] mx-auto my-8 p-4 
+          className="bg-game-bg w-[65%] mx-auto my-8 px-10 py-8
           rounded-lg shadow-lg relative flex flex-col items-center"
         >
           <GameStats
